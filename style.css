@@ -1,0 +1,95 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--darkest);
+}
+
+
+form{
+	display: flex;
+	margin: 30px auto;
+	justify-content: center;
+	align-items: center;
+}
+
+form fieldset{
+	width: fit-content;
+}
+
+form .mb-3{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+form fieldset input{
+	background-color: var(--dark);
+	border-radius: 10px;
+	font-size: 20px;
+	border: none;
+	display: flex;
+	margin: auto;
+	padding: 8px 5px;
+	width: 700px;
+}
+
+form fieldset .btn{
+	background:none;
+	border: none;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+	padding:0 10px;
+}
+
+#task-list{
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	flex-direction: column;
+	list-style: none;
+}
+
+#task-list #task-id{
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid white;
+	width: 1000px;
+	margin: 10px 0;
+	padding: 10px;
+	align-items: center;
+}
+
+
+.menu li{
+	list-style: none;
+	
+}
+
+.menu li a{
+	color: white;
+	text-decoration: none;
+
+}
+
+
+
+
