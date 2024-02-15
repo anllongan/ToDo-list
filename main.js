@@ -36,8 +36,8 @@ function displayTask() {
 				</div>
 				<div class="menu">
 					<ul>
-						<li><a onclick='editTask(${gorev.id},"${gorev.gorevAdi}")' class="item" id="" href="#"><i class="fa-solid fa-pen-to-square"></i> Düzenle</a></li>
-						<li><a onclick="deleteTask(${gorev.id})" class="item" id="clear" href="#"><i class="fa-solid fa-trash"></i> Sil</a></li>
+						<li><a onclick='editTask(${gorev.id},"${gorev.gorevAdi}")' class="item" id="" href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a></li>
+						<li><a onclick="deleteTask(${gorev.id})" class="item" id="clear" href="#"><i class="fa-solid fa-trash"></i> Delete</a></li>
 					</ul>
 				</div>
 			</li>
