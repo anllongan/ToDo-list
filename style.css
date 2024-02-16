@@ -95,6 +95,10 @@ form fieldset #btnAddNewTask{
 	align-items: center;
 }
 
+#task-id label.checked{
+	text-decoration: line-through;
+}
+
 
 .menu li{
 	list-style: none;
@@ -105,6 +109,25 @@ form fieldset #btnAddNewTask{
 	color: white;
 	text-decoration: none;
 
+}
+
+.controls {
+	margin: 50px auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.filters span.active{
+	color: #3c87ff;
+}
+
+.filters span{
+	margin-right: 5px;
+	font-size: 15px;
+	color: #ffff;
+	cursor: pointer;
 }
 
 
