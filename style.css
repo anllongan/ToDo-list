@@ -15,6 +15,7 @@
 }
 
 body {
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -24,6 +25,7 @@ body {
 
 
 form{
+	width: 100%;
 	display: flex;
 	margin: 30px auto;
 	justify-content: center;
@@ -32,6 +34,7 @@ form{
 
 form fieldset{
 	width: fit-content;
+	max-width: 80%;
 }
 
 form .mb-3{
@@ -48,7 +51,8 @@ form fieldset input{
 	display: flex;
 	margin: auto;
 	padding: 8px 5px;
-	width: 700px;
+	width: 500px;
+	max-width: 80%;
 }
 
 form fieldset #btnAddNewTask{
@@ -61,8 +65,9 @@ form fieldset #btnAddNewTask{
 }
 
 #task-list{
+	max-width: 60%;
 	display: flex;
-	margin: 0 auto;
+	margin: auto;
 	padding: 0;
 	flex-direction: column;
 	list-style: none;
@@ -132,4 +137,67 @@ form fieldset #btnAddNewTask{
 
 
 
+@media only screen and (max-width: 430px){
+	body{
+		max-width: 100%;
+	}
 
+	h1{
+		font-size: 20px;
+	}
+
+	form{
+		display: flex;
+		font-size: 15px;
+		margin: 0 auto;
+		width: fit-content;
+	}
+
+	form fieldset{
+		font-size: 15px;
+		width: auto;
+	}
+
+	form fieldset input{
+		width: 300px;
+		padding: 3px;
+		font-size: 13px;
+	}
+
+	.controls .filters span{
+		font-size: 13px;
+	}
+
+
+	.btn{
+		padding: 5px 7px;
+		font-size: 13px;
+	}
+
+	#task-list{
+		margin: 20px auto;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#task-list #task-id{
+		display: flex;
+		margin:0 auto;
+		padding: 5px ;
+		max-width: 90%;
+		font-size: 10px;
+	}
+
+
+	#task-list .form-check{
+		overflow-x: hidden;
+		max-width: 230px;
+		
+	}
+	
+	p{
+		text-align: center;
+		font-size: 13px;
+	}
+	
+}
